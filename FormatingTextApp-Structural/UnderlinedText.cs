@@ -7,7 +7,7 @@ namespace FormatingTextApp_Structural
         public UnderlinedText(IFormatText text) : base(text) { }
         public override string FormatText()
         {
-            return _text + " underline";
+            return _text.FormatText() + " underline";
         }
     }
 }

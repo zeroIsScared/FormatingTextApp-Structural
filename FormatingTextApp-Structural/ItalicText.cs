@@ -4,10 +4,13 @@ namespace FormatingTextApp_Structural
 {
     public class ItalicText : BaseDecorator
     {
-        public ItalicText (IFormatText text) : base(text) { }
+        public ItalicText(IFormatText text) : base(text) 
+        {
+            
+        }
         public override string FormatText()
         {
-            return _text + " italic";
+            return _text.FormatText() + " italic";
         }
     }
 }

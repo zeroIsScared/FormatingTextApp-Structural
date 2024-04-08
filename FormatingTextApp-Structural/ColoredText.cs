@@ -6,7 +6,7 @@ namespace FormatingTextApp_Structural
         public ColoredText(IFormatText text) : base(text) { }   
         public override string FormatText()
         {
-            return _text + " color";
+            return _text.FormatText() + " color";
         }
     }
 }

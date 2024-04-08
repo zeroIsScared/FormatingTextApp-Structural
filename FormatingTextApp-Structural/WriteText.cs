@@ -4,16 +4,9 @@ namespace FormatingTextApp_Structural
 {
     public class WriteText : IFormatText
     {
-        public string Text { get; set; }
-        public WriteText(string text)
+        public string FormatText()
         {
-            Text = text;
-        }
-
-      public string FormatText()
-        {
-            Console.WriteLine(Text);
-            return Text;
+            return "simple text";
         }
     }
 }

@@ -7,7 +7,7 @@ namespace FormatingTextApp_Structural
         public BoldText(IFormatText text) : base(text) { }
         public override string FormatText()
         {
-            return _text + " bold";
+            return _text.FormatText() + " bold";
         }
     }
 }
